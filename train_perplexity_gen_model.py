@@ -87,7 +87,6 @@ def calc_perplexity(inputs):
             sentence_perplexity += -torch.log(prob_vector[int(input_token)]).item()
 
         sentence_perplexity /= disqus_model.MAX_SENT_LEN
-        sentence_perplexity = np.exp(sentence_perplexity)
         batch_perplexity += sentence_perplexity
 
     batch_perplexity /= batch_size
