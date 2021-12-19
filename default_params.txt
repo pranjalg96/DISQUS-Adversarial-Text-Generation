@@ -1,0 +1,20 @@
+Provided for your reference in case you change them and forget the default parameters.
+
+mb_size = 32
+
+h_dim = 300
+z_dim = 100
+
+lr = 1e-3
+lr_decay_every = 10000
+
+n_epochs = 100
+log_interval = 10000
+
+num_layers_enc = 2
+bidirectional_enc = True
+dropout_enc = 0.3
+
+p_word_dropout = 0.3
+
+emb_dim = 100
